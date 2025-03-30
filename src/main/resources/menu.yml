@@ -1,0 +1,51 @@
+news_inventory:
+ menu_name: 'новостные сводки'
+ menu_line_size: 6  #число кратное 9(ограничение 6 строк)
+ standard_news_name: 'Обновление '
+ author: 'Grilex'
+edit_inventory: #меню отвечающее за возможность создания и редакции действующих записей
+  menu_name: 'редактирование'
+  menu_line_size: 3 #число кратное 9(ограничение 6 строк)
+  draft:  #предмет черновика
+   name: '§x§C§0§6§C§3§EЧ§x§B§3§6§6§3§Bе§x§A§7§6§1§3§9р§x§9§A§5§B§3§6н§x§8§D§5§6§3§4о§x§8§0§5§0§3§1в§x§7§4§4§B§2§Fи§x§6§7§4§5§2§Cк '
+   lore:
+    - 'для добавления нового черновика '
+    - 'требуется нажатие левую клавишу мышки'
+    - 'для просмотра "временно" отложенных записей'
+    - 'требуется нажатие правой клавиши мышки'
+   item: 'WRITABLE_BOOK'  #информацию брать отсюда -> https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+   menu_location: 13
+draft_inventory:
+ menu_name: 'Архив'
+ menu_line_size: 6
+ #число кратное 9(ограничение 6 строк)
+ standard_news_name: 'Обновление '
+ author: 'Grilex'
+ lore:
+   - 'Для перемещение из раздела архив, '
+   - 'в раздел новостные сводки необходимо:'
+   - 'Shift+ЛКМ'
+   - 'Для удаления из раздела архив, '
+   - 'необходимо: Shift+ЛКМ'
+special_items:
+  back:
+    #(не менять)
+    nbt: -1
+    name: '&4Назад'
+    lore:
+    player: 'MHF_ArrowLeft'
+  forward:
+    #(не менять)
+    nbt: 1
+    name: '&2Вперед'
+    lore:
+    player: 'MHF_ArrowRight'
+
+prompt:
+ add_book_prompt:
+  - 'что бы добавить новость'
+  - 'требуется нажать на клавишу Q по книге'
+  - 'действительно пока открыт инвентарь!'
+exception:
+ name_exception: '&4Проблема с названием'
+ size_exception: '&4Проблема с размером инвентаря'
