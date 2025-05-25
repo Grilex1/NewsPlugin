@@ -9,9 +9,9 @@ import java.util.regex.Pattern;
 public class ChatUtils {
     private static final Pattern HEX_PATTERN = Pattern.compile("#([A-Fa-f0-9]){6}");
     private ArrayList<String> list;
-    public List<?> hexColorList(ArrayList<?> list)
-    {
-        if (list== null || list.isEmpty()) {
+
+    public List<?> hexColorList(ArrayList<?> list) {
+        if (list == null || list.isEmpty()) {
             return list;
         }
         this.list = new ArrayList<>();
@@ -22,8 +22,8 @@ public class ChatUtils {
         }
         return this.list;
     }
-    public  String hexColorString(String message)
-    {
+
+    public String hexColorString(String message) {
         if (message == null || message.isEmpty()) {
             return message;
         }

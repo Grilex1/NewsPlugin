@@ -13,7 +13,12 @@ databases:
    user: ''
    password: ''
 prefix: '§x§5§F§E§2§C§5N§x§7§9§D§F§B§4e§x§9§3§D§C§A§2w§x§A§E§D§9§9§1s§x§C§8§D§6§7§F📝§x§E§2§D§3§6§E|'
+reload_message: '&2&0Успешно перезагружен &r✓'
 permission:
    bypass: 'newsplugin.bypass'
    news: 'newsplugin.news'
    news_create: 'newsplugin.create'
+   news_help: 'newsplugin.help'
+   news_reload: 'newsplugin.reload'
+exception:
+   permission_exception: '&4Недостаточно прав!'

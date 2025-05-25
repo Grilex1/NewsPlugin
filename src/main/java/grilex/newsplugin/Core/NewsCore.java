@@ -13,7 +13,7 @@ public class NewsCore {
     }
 
     public NewsCore() {
-       try {
+        try {
             String host = NewsPlugin.getInstance().getConfig().getString("databases.host");
             String port = NewsPlugin.getInstance().getConfig().getString("databases.port");
             String database = NewsPlugin.getInstance().getConfig().getString("databases.database");

@@ -32,15 +32,16 @@ public class ConfigUtils {
 
     }
 
-    public void saveConfig()  {
+    public void saveConfig() {
         try {
             this.getConfig().save(this.configFile);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
+
     public void saveDefault() {
-        if(!configFile.exists()) {
+        if (!configFile.exists()) {
             plugin.saveResource(name, false);
         }
     }
