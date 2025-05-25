@@ -10,7 +10,6 @@ import org.bukkit.entity.Player;
 import java.sql.SQLException;
 
 public class Reload extends SubCommand {
-
     FileConfiguration config = NewsPlugin.getInstance().getConfig();
     String reload = config.getString("permission.news_reload");
     ChatUtils chatUtils = new ChatUtils();
