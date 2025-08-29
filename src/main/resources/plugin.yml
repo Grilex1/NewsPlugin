@@ -1,6 +1,0 @@
-name: NewsPlugin
-version: '${project.version}'
-main: grilex.newsplugin.NewsPlugin
-api-version: '1.16'
-commands:
-  news:
